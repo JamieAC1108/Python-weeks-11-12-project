@@ -45,7 +45,8 @@ def get_sentiment(text):
 
 df['sentiment'] = df['Title'].apply(get_sentiment)
 
-print(df)
+print(df[['Source', 'Title', 'sentiment']])
+
 
 
 # %%
